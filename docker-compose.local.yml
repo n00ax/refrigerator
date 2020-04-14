@@ -1,0 +1,10 @@
+version: "3"
+services:
+  postgres:
+    environment:
+      - POSTGRES_DB=refigeratorservicedb
+      - POSTGRES_USER=app
+      - POSTGRES_PASSWORD=app_password
+    image: postgres:9.6.17
+    ports:
+    - "5432:5432"
